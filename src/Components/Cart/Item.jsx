@@ -28,8 +28,8 @@ function Item(props) {
                 </div>
             </div>
             <div className={`w-full flex ${props.id === '2' ? 'md:hidden' : ''} justify-center items-center gap-8`}>
-                <span className='text-xs py-2 px-12 font-medium cursor-pointer bg-slate-200 rounded-full'>View</span>
-                <span className='text-xs py-2 px-6 text-white cursor-pointer font-medium bg-teal-400 rounded-full'>Try At Home</span>
+                <span className='text-xs py-3 px-12 font-medium cursor-pointer bg-slate-200 rounded-full'>View</span>
+                <span className='text-xs py-3 px-6 text-white cursor-pointer font-medium bg-teal-400 rounded-full'>Try At Home</span>
             </div>
         </div>
     )
