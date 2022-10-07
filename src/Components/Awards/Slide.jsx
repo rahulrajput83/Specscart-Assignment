@@ -1,6 +1,8 @@
+/* Imports */
 import React from 'react';
 import image1 from '../../Images/specscart_awards_follower_rewards.png'
 
+/* Functional Component */
 function Slide() {
   return (
     <div className='flex w-full flex-col justify-center items-center'>
@@ -13,4 +15,5 @@ function Slide() {
   )
 }
 
+/* Export Component */
 export default Slide

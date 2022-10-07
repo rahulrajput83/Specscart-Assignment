@@ -1,3 +1,4 @@
+/* Imports */
 import React from 'react';
 import { BsFillStarFill } from 'react-icons/bs';
 import Star from './Star';
@@ -14,6 +15,7 @@ const ResponsiveEllipsis = responsiveHOC()(LinesEllipsis)
 const star = [BsFillStarFill, BsFillStarFill, BsFillStarFill, BsFillStarFill, BsFillStarFill]
 const user = [left, left, one, right, right]
 
+/* Functioanl Component */
 function Reviews() {
     return (
         <div className='w-full relative flex flex-col md:px-28 my-6 px-4 justify-center items-center'>
@@ -39,6 +41,7 @@ function Reviews() {
                 <div className='my-4 font-semibold cursor-pointer flex flex-col w-full justify-center items-center md:hidden text-teal-500 text-lg'>
                     <span>Learn More</span>
                     <div className='flex my-4 justify-center items-center'>
+                        {/* Rendering More Component with props */}
                         <More background='bg-teal-500' />
                         <More background='bg-gray-400' />
                         <More background='bg-gray-400' />
@@ -56,4 +59,5 @@ function Reviews() {
     )
 }
 
+/* Exports */
 export default Reviews

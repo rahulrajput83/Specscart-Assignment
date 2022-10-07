@@ -1,3 +1,4 @@
+/* Imports */
 import React from 'react';
 import UV from '../../Images/Group_5636.png'
 import glare from '../../Images/Group_5544.png';
@@ -6,7 +7,7 @@ import scratch from '../../Images/Group_5547.png';
 import bgSecond from '../../Images/Image_30.png';
 import rocket from '../../Images/Group_6249.png'
 
-
+/* Glasses Functional Component */
 function Glasses() {
     return (
         <div className='w-full px-4 my-6 flex flex-col justify-center items-center'>
@@ -64,4 +65,5 @@ function Glasses() {
     )
 }
 
+/* Exports */
 export default Glasses

@@ -1,6 +1,8 @@
+/* Imports */
 import React from 'react'
 import Slide from './Slide';
 
+/* Functional Component */
 function Awards() {
     return (
         <div className='md:px-28 w-full my-12 grid grid-cols-1 md:grid-cols-2 md:gap-x-20 gap-y-10 px-4 justify-center items-center'>
@@ -14,6 +16,7 @@ function Awards() {
                 </div>
                 <span className='w-full text-sm text-center md:text-start mt-4 text-gray-500'>Our work speaks for itself - Specscart has been awarded first prize in Venture Further 2018 Business Category. We are constantly working to innovate new ways and technology to become UK’s leading Eye Care provider.</span>
             </div>
+             {/* Rendering Slide Component */}
             <Slide />
         </div>
     )

@@ -1,13 +1,17 @@
+/* Imports */
 import React from 'react';
 import { BsHeart } from 'react-icons/bs'
 import Color from './Color';
 
+/* Functional Component */
 function Item(props) {
     return (
         <div className='w-full flex p-2 flex-col justify-center items-center'>
             <BsHeart className='ml-auto text-xl text-gray-600' />
+            {/* Gets src from props */}
             <img src={props.image} alt='' className='mt-0' />
             <div className='w-full mx-auto flex justify-center items-center'>
+                 {/* Rendering Color Component with props */}
                 <Color background='bg-black' />
                 <Color background='bg-slate-400' />
                 <Color background='bg-sky-400' />
@@ -31,4 +35,5 @@ function Item(props) {
     )
 }
 
+/* Export Component */
 export default Item

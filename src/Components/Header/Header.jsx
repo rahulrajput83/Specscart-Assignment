@@ -1,3 +1,4 @@
+/* Imports */
 import React from 'react'
 import Heading from './Heading'
 import Icons from './Icons'
@@ -11,20 +12,26 @@ import Group2967 from '../../Images/Group_2967.png'
 import { MdMenu } from 'react-icons/md'
 
 
-
+/* Header Functional Component */
 function Header() {
   return (
     <div className='w-full grid shadow-lg grid-cols-2 px-3 md:px-12 md:grid-cols-3 items-center justify-between'>
 
       <div className='w-full hidden md:flex py-1 flex-col'>
         <div className='flex items-center'>
+          {/* Rendering Text Component with props. */}
           <Text text='Free Return' />
+          {/* Rendering Line Component */}
           <Line />
+          {/* Rendering Text Component with props. */}
           <Text text='Try At Home' />
+          {/* Rendering Line Component */}
           <Line />
+          {/* Rendering Text Component with props. */}
           <Text text='24 Hr Dispatch' />
         </div>
         <div className='flex mt-3 items-center'>
+          {/* Rendering Heading Component with props */}
           <Heading text='Glasses' />
           <Heading text='Sunglasses' />
           <Heading text='Eye-Test' />
@@ -42,14 +49,20 @@ function Header() {
       </div>
       <div className='w-full py-1 flex mx-auto flex-col items-end'>
         <div className='hidden md:flex items-center'>
+          {/* Rendering Text Component with props. */}
           <Text text='+441613125767' />
+          {/* Rendering Line Component */}
           <Line />
+          {/* Rendering Text Component with props. */}
           <Text text='Help' />
+          {/* Rendering Line Component */}
           <Line />
+          {/* Rendering Text Component with props. */}
           <Text text='Log In' />
         </div>
         <div className='flex mt-3 items-center'>
           <div className='hidden md:flex'><Icons icon={Group2964} /></div>
+          {/* Rendering Icons Component with props */}
           <Icons icon={Group2966} />
           <Icons icon={Group2965} />
           <Icons icon={Group2967} />
@@ -60,4 +73,5 @@ function Header() {
   )
 }
 
+/* Exports */
 export default Header

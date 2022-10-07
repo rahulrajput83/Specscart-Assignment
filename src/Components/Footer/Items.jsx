@@ -1,13 +1,16 @@
+/* Imports */
 import React from 'react'
 import Heading from './Heading'
 import Text from './Text'
 
+/* Items Functional Component */
 function Items(props) {
     return (
         <div className='w-full hidden md:flex text-white flex-col'>
             <Heading text={props.heading} />
             {props.heading === 'Glasses' ?
                 <div className='flex py-1 flex-col'>
+                    {/* Rendering Text Component with props. */}
                     <Text text='round glasses' />
                     <Text text='wayfarer glasses' />
                     <Text text='cat eye glasses' />
@@ -18,6 +21,7 @@ function Items(props) {
                 </div>
                 : null}
                 {props.heading === 'Sunglasses' ? <div className='flex py-1 flex-col'>
+                    {/* Rendering Text Component with props. */}
                     <Text text='aviator Sunglasses' />
                     <Text text='round Sunglasses' />
                     <Text text='cat eye Sunglasses' />
@@ -27,6 +31,7 @@ function Items(props) {
                     <Text text='Prescription Sunglasses'/>
                 </div> : null}
                 {props.heading === 'Help & Faq' ? <div className='flex py-1 flex-col'>
+                    {/* Rendering Text Component with props. */}
                     <Text text='your prescription' />
                     <Text text='digital blue glasses' />
                     <Text text='lenses & coating' />
@@ -36,6 +41,7 @@ function Items(props) {
                     <Text text='free returns'/>
                 </div> : null}
                 {props.heading === 'about us' ? <div className='flex py-1 flex-col'>
+                    {/* Rendering Text Component with props. */}
                     <Text text='our story' />
                     <Text text='contact us' />
                     <Text text='our blog' />
@@ -46,4 +52,5 @@ function Items(props) {
     )
 }
 
+/* Exports Component */
 export default Items
